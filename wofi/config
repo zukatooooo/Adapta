@@ -1,0 +1,5 @@
+allow_images=true
+columns=2
+prompt=Search
+normal_window=true
+image_size=40
