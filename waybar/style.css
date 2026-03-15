@@ -93,7 +93,32 @@ button {
     font-size: 20px;
 }
 
+#battery {
+    font-size: 20px;
+}
+
+#power-profiles-daemon {
+    font-size: 20px;
+}
+
+#power-profiles-daemon.performance {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#power-profiles-daemon.balanced {
+    padding-left: 0px;
+    padding-right: 10px;
+}
+
+#power-profiles-daemon.power-saver {
+    padding-left: 2px;
+    padding-right: 8px;
+}
+
+#power-profiles-daemon,
 #pulseaudio,
+#backlight,
 #idle_inhibitor,
 #memory,
 #temperature,

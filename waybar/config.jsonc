@@ -5,7 +5,8 @@
     "height": 48,
     "modules-left": [
         "idle_inhibitor",
-	"wlr/taskbar",
+        "power-profiles-daemon",
+	    "wlr/taskbar",
         "group/sys-info"
     ],
     "modules-center": [
@@ -111,6 +112,32 @@
        		"kitty",
 		"wofi"
     	]
-    }
+    },
 
+    "backlight": {
+        "format": "{icon} - [ {percent} % ]",
+        "format-icons": ["󱩎", "󱩏", "󱩐", "󱩑", "󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"]
+    },
+
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}",
+        "format-alt": "{time} {icon}",
+        "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+    },
+
+    "power-profiles-daemon": {
+      "format": "{icon}",
+      "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+      "tooltip": true,
+      "format-icons": {
+        "default": "  ",
+        "performance": "  ",
+        "balanced": "  ",
+        "power-saver": "  "
+      }
+    }
 }
